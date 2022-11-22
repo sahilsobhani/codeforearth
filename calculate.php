@@ -51,10 +51,10 @@
           
           <h3 >The Carbon Emission of your code is</h3>
           
-          <h3><?php echo  $_GET["time"]*(10+($_GET["gpuwatt"]+4)+$_GET["cpuperc"]*2.5)/3600000*475; ?> gCO2.eq   </h3>
+          <h3><?php echo  $_POST["time"]*(10+($_POST["gpuwatt"]+4)+$_POST["cpuperc"]*2.5)/3600000*475; ?> gCO2.eq   </h3>
           <br>
           <h3 >That is equivalent to</h3>
-          <h3> A car driving for <?php echo  $_GET["time"]*(10+($_GET["gpuwatt"]+4)+$_GET["cpuperc"]*2.5)/3600*475/404; ?> X 10<sup>-3</sup> Miles  </h3>
+          <h3> A car driving for <?php echo  $_POST["time"]*(10+($_POST["gpuwatt"]+4)+$_POST["cpuperc"]*2.5)/3600*475/404; ?> X 10<sup>-3</sup> Miles  </h3>
           
         </div>
       </div>
