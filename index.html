@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's Calculate!</h3>
+          <p class="text">
+            ● Install our python package using the following command
+          </p>
+          
+          <p>
+            pip install codearth
+          </p>
+
+          <div class="text">
+            <div >
+              <p> ● Import our module and wrap your code in the tracker function</p>
+            </div>
+            <div class="text">
+              
+              <p>
+                ● Enter the output in the following
+              </p>
+            </div>
+            
+          </div>
+
+          
+        </div>
+
+        <div class="contact-form" id="form>
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form name='myform'action='calculate.php' autocomplete="off" method="get">
+
+            <h3 class="title">Calculate!</h3>
+            <div class="input-container">
+              <input type="text" name="gpuwatt" class="input" required />
+              <label for="">GPU Power in Watts</label>
+              <span>GPU Power in Watts</span>
+            </div>
+            <div class="input-container">
+              <input type="number" name="time" class="input" required/>
+              <label for="">Time Taken</label>
+              <span>Time Taken</span>
+            </div>
+            <div class="input-container">
+              <input type="float" name="cpuperc" class="input" required />
+              <label for="">CPU Percent</label>
+              <span>CPU Percent</span>
+            </div>
+
+            
+            
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
